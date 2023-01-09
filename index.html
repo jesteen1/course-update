@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>c++</title>
+    <title>c++ in tamil </title>
+    <link rel="icon" href="./logo.png">
     <link rel="stylesheet" href="./tailwind.css">
 </head>
 <style>
+
+    .overlay{
+       
+        width: 400px;
+       height: 170px;
+        z-index: 1;
+        position: absolute;
+      
+        opacity: 0;
+        transition: .5s ease-in-out ;
+    }
+    .overlay:hover{
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.76);
+    }
+    .scale-animation{
+        transform: scale(1);
+        transition: all ease-in-out .5s;
+    }
+    .scale-animation:hover{
+        transform: scale(1.1);
+    }
+    @media (max-width:900px)  {
+    .overlay{
+       
+       width: 400px;
+      height: 170px;
+       z-index: 1;
+       position: absolute;
+     
+       opacity: 0;
+       transition: .5s ease-in-out ;
+   }
+   .overlay:hover{
+       opacity: 0;
+       background-color: rgba(0, 0, 0, 0.76);
+   }
+   .scale-animation{
+        transform: scale(1);
+        transition: all ease-in-out .5s;
+    }
+    .scale-animation:hover{
+        transform: scale(1);
+    }
+   }
+    img{
+        position: relative;
+    }
     .dull{
         background-color: rgb(253, 241, 255);
     }
@@ -22,20 +71,23 @@ height: 230px;
         background-color: rgb(242, 242, 242);
       
     }
-    .scale-animation{
-        transform: scale(1);
-        transition: all ease-in-out .5s;
-    }
-    .scale-animation:hover{
-        transform: scale(1.1);
-    }
+  
     .width{
 height: 100%;
     }
+    .conentcenter{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
     .design{
         width: 100%;
 content: "";
 height: 100px;
+    }
+    .customwidth{
+        width: 300px;
     }
 </style>
 <body>
@@ -59,7 +111,13 @@ height: 100px;
     <div class="p-5   w-full md:w-1/2  lg:w-1/3 ">
         <!--card-->
         <div class="card bg-white shadow-2xl overflow-hidden rounded pb-5 scale-animation cursor-pointer">
-    <img src="./c++.jpg" class=" object-contain " alt="">
+            <div class="overflow-hidden">
+                <div class=" overlay contentcenter "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white h-full customwidth  ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                  </svg></div>
+                <img src="./c++.jpg" class=" object-contain " alt="">
+            </div>
     <div class="text-gray-900 font-bold">
     <div class="flex  ">
         <p class=" blacklight  mt-4 ml-3 px-2 py-1 rounded"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -80,7 +138,14 @@ height: 100px;
     <div class="p-5   w-full md:w-1/2  lg:w-1/3 ">
         <!--card-->
         <div class="card bg-white shadow-2xl overflow-hidden rounded pb-5 scale-animation cursor-pointer">
+            <div class="overflow-hidden">
+                <div class=" overlay conentcenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white customwidth  h-full relative right-12">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                      </svg>
+                </div>
     <img src="./dev.jfif" class=" object-contain " alt="">
+    </div>
     <div class="text-gray-900 font-bold">
     <div class="flex  ">
         <p class=" blacklight  mt-4 ml-3 px-2 py-1 rounded"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -95,6 +160,31 @@ height: 100px;
     </div>
 </a>
 <!--Copy this alone  this is for downloading the software -->
+<a href="./arrays.mp4"  class="h-64">
+
+    <div class="p-5   w-full md:w-1/2  lg:w-1/3 ">
+        <!--card-->
+        <div class="card bg-white shadow-2xl overflow-hidden rounded pb-5 scale-animation cursor-pointer">
+            <div class="overflow-hidden">
+                <div class=" overlay conentcenter"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white h-full customwidth relative right-12 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                  </svg></div>
+    <img src="./Need-for-array.png" class=" object-contain " alt="">
+    </div>
+    <div class="text-gray-900 font-bold">
+    <div class="flex  ">
+        <p class=" blacklight  mt-4 ml-3 px-2 py-1 rounded"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+          </svg>
+          </p>
+        <p class=" blacklight mt-4 ml-3 px-2 py-1 rounded">arrays in c++</p>
+    </div>
+    </div>
+        </div>
+    </div>
+</a>
 
 
    </div>
@@ -111,5 +201,8 @@ height: 100px;
     <p class="text-gray-800"> 2023,by jesteen / jesteen creactive<p>
 </div>
    </footer>
+   <style>
+
+   </style>
 </body>
 </html> 
